@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--   M E T A S   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--   L I N K S   -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!--   T I T L E   -->
+    <title>Postal Code - Find any address!</title>
+
+</head>
+<body>
+
+    <!--   H T M L   -->
+    <main class="main">
+
+        <!--   F O R M   -->
+        <form class="main-form">
+            <label for="input" class="main-wrong" data-wrong="value">...</label>
+            <input type="text" placeholder="Insira o CEP desejado!" autocomplete="off" class="main-input" id="input" data-input>
+            <button class="main-button" data-button="start">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </button>
+        </form>
+
+        <!--   M O D A L   -->
+        <div class="modal" data-modal="area">
+            <section class="modal-box">
+                <button class="modal-close" data-button="stop">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                </button>
+                <h2>Endereço Encontrado!</h2>
+                <div class="modal-result">
+                    <div class="modal-result-item">
+                        <h3>CEP</h3>
+                        <p data-result>...</p>
+                    </div>
+                    <div class="modal-result-item">
+                        <h3>Logradouro</h3>
+                        <p data-result>...</p>
+                    </div>
+                    <div class="modal-result-item">
+                        <h3>Bairro</h3>
+                        <p data-result>...</p>
+                    </div>
+                    <div class="modal-result-item">
+                        <h3>Cidade</h3>
+                        <p data-result>...</p>
+                    </div>
+                    <div class="modal-result-item">
+                        <h3>Estado</h3>
+                        <p data-result>...</p>
+                    </div>
+                    <div class="modal-result-item">
+                        <h3>DDD</h3>
+                        <p data-result>...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!--   S C R I P T   -->
+    <script src="scripts/script.js" type="module"></script>
+    
+</body>
+</html>

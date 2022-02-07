@@ -1,0 +1,19 @@
+{
+    "name": "postal-code",
+    "version": "2.0.0",
+    "description": "Faz uma busca detalhada do endereço correspondente ao CEP inserido pelo usuário!",
+    "main": "scripts/script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ianvianna/postal-code.git"
+    },
+    "author": "Ian M. Vianna",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ianvianna/postal-code/issues"
+    },
+    "homepage": "https://github.com/ianvianna/postal-code#readme"
+}

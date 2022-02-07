@@ -1,0 +1,99 @@
+/*   F O N T S   */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap");
+
+/*   G E N E R A L   */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+/*   M A I N   */
+.main {
+    position: fixed;
+    background: #245473 url(../images/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+.main-form {
+    background: #c7c7c7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    min-height: 50px;
+    border-radius: 20px 20px 30px 30px;
+}
+.main-input {
+    background: #ececec;
+    padding: 10px 20px;
+    width: 80%;
+    min-height: 50px;
+    font-size: 1em;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 0 20px #00000080;
+    outline: none;
+}
+.main-input:focus {
+    box-shadow: 0 0 10px #ececec;
+    transition: box-shadow 0.3s;
+}
+.main-button {
+    background: #245473;
+    padding: 5px;
+    width: 20%;
+    min-height: 50px;
+    color: #ececec;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 20px #00000080;
+    cursor: pointer;
+    outline: none;
+}
+.main-button:hover,
+.main-button:focus {
+    background: #30728c;
+    box-shadow: 0 0 10px #ececec;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.main-button svg {
+    width: 35px;
+}
+.main-wrong {
+    display: none;
+    padding: 10px;
+    font-weight: 600;
+    color: #0f0f0f;
+}
+.main-wrong.active {
+    display: block;
+}
+
+/*   R E S P O N S I V E   */
+@media (max-width: 315px) {
+    .main-form {
+        flex-direction: column;
+    }
+    .main-input {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .main-button {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
